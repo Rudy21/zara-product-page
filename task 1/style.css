@@ -1,0 +1,205 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+header .lines{
+    display: flex;
+    width:25px;
+    height: 2px;
+    cursor: pointer;
+    background-color: #999999;
+    margin: 10px 0px 0px 10px;
+}
+img{
+    width: 291.6px;
+    height:150px;
+    cursor: pointer;
+    margin-left: 170px;
+    padding-top: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    margin: -280px 10px 0px 0px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.search{
+    box-sizing: border-box;
+    border:1px solid black;
+    max-width: fit-content;
+    padding: 5px 20px 5px 280px;
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+    margin-left: 800px;
+    position: relative;
+    bottom: 130px;
+    font-size: 13px;
+    cursor: pointer;
+}
+main{
+    max-width: fit-content;
+}
+.m1{
+    margin-top: 180px;
+    margin-left: 160px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid black;
+}
+.m1 p{
+    margin: 18px 20px;
+    font-size: 11.5px;
+}
+.m1 a{
+    margin: 18px 20px;
+    font-size: 10px;
+    color: #999999;
+}
+.images{
+    position: absolute;
+    top: 180px;
+    margin-left: 600px;
+}
+.images video{
+    width:320px;
+    height: 492px;
+}
+
+main .details{
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    width: 320px;
+    height: 530px;
+    border: 1px solid black;
+    max-height: max-content;
+}
+main .details p,span,button{
+    margin: 18px 20px;
+    font-size: 11px;
+}
+.fa.fa-bookmark-o{
+    padding-left: 50px;
+    cursor: pointer;
+}
+/* main .s2{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    line-height: 50px;
+} */
+main .details button{
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    width: 115.13px;
+    height: 36px;
+    font-size: 8px;
+    font-weight: 100;
+    color: #999999;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+main .details .b1{
+    border: 1px solid #000;
+    color: #000;
+}
+main .details button:hover{
+    background-color: #e6e7e8;
+}
+.fa.fa-envelope-o{
+    color: #000;
+    padding-left: 2px;
+    font-size: 9px;
+    width: 10px;
+}
+main span{
+    font-size: 9px;
+    color: #999999;
+    font-weight: 200;
+}
+main .details a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    padding: 8px 153px 16px 141px;
+}
+main .details a:hover{
+    color: #999999;
+    /* transition: color ease-in-out 0.5s; */
+}
+@media only screen and (max-width:600px){
+    header .lines{
+        width: 10px;
+        height: 1px;
+        margin: 4px 0px 0px 10px;
+    }
+    header img{
+       display: none;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav ul li a{
+        display: flex;
+        margin-left: 50px;
+    }
+    .search{
+       display: none;        
+    }
+    .images video{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 600px;
+        bottom: 151px;
+        width: 233px;
+        height: 348px;
+    } 
+    /* main .details a{
+        display: block;
+        margin-top: -150px;
+        border-top:1px solid #000;
+    }   */
+    main .details{
+        display: block;
+        position: relative;
+        top: -95px;
+        left: 0px;
+        width: 233px;
+        height: fit-content;
+    }
+    main .details a{
+        position: relative;
+        right: 30px;
+    }
+    .m1{
+        /* margin: 0 auto; */
+        position: relative;
+        top: 878px;
+        right: 160px;
+        width: 233px;
+        border-top: none;
+    }
+}
